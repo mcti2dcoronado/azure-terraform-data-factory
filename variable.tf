@@ -14,12 +14,7 @@ variable "tenant_id"{
 variable "convention" {
   type        = string
   description = "Define naming convention"
-  default     = "afw-mcti-lab-agw"
-}
-variable "resource_group_name" {
-   description  = "Name of the resource group in which resources will be created"
-   type         = string
-   default      = "rg"
+  default     = "adf-mcti-lab"
 }
 
 variable "location" {
@@ -41,3 +36,10 @@ variable "prefix" {
   default   = "mcit"
 }
 
+variable "administrator_login" {
+  type = string
+}
+
+variable "administrator_login_password" {
+  type = string
+}
